@@ -23,12 +23,6 @@ df = yf.download(user_input, start=start, end=end)  # Menggunakan input pengguna
 st.subheader('Data from 2010-Now')
 st.write(df.describe())
 
-# Visualizations
-st.subheader('Closing Price vs Time Chart')
-fig = plt.figure(figsize=(12,6))
-plt.plot(df['Close'])
-st.pyplot(fig)
-
 # Time Series Plot dengan Plotly
 st.subheader('Stock Price Time Series')
 fig = go.Figure()
